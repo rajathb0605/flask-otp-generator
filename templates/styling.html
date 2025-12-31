@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+</head>
+<body>
+    <nav id="nav1">
+        <h1> WELCOME TO OTP GENERATOR</h1><br>
+        <marquee><H3>WELCOME</H3></marquee>
+    </nav>
+    <ol>
+        <a href="{{ url_for('fourdigit') }}"><LI>GENERATE 4-DIGIT </LI></a><BR>
+        <a href="{{ url_for('sixdigit') }}"><LI>GENERATE 6-DIGIT  </LI></a><BR>
+        <a href="{{ url_for('contact')}}"><LI>CANTACT SUPPORT </LI></a><BR>
+        <a href="{{ url_for('donate')}}"><LI>DONATE MONEY</LI></a><BR>
+
+            
+    </ol>
+</body>
+<style>
+    body{
+        background-color: #212121;
+        color: white;
+    }
+    h1{
+        text-align: center;
+    }
+    #nav1{
+        background-color: #01153E;
+        text-align: justify;
+    }
+    a{
+        color: white;
+    }
+</style>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-DIGIT GENERATOR</title>
+</head>
+
+<body>
+    <h1>WELCOME FOR 4-DIGIT OTP GENERATOR</h1>
+
+    <div id="input">
+        <form method="POST">
+            <input type="number" name="how_many" placeholder="How many OTPs?" required>
+            <br><br>
+            <button class="button">Generate</button>
+        </form>
+    </div>
+
+    {% if otps %}
+        <h2>Generated OTPs</h2>
+        {% for otp in otps %}
+            <h3>{{ otp }}</h3>
+        {% endfor %}
+    {% endif %}
+</body>
+
+<style>
+    body{
+        background-color: #212121;
+        color: white;
+    }
+    h1{
+        text-align: center;
+    }
+    h2, h3{
+        text-align: center;
+    }
+    .button{
+        color: white;
+        background-color: green;
+        padding: 8px 15px;
+        border: none;
+        cursor: pointer;
+    }
+    #input{
+        text-align: center;
+    }
+</style>
+</html>
